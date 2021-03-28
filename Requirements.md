@@ -18,7 +18,7 @@
 
 ## Revision History Page
 
-- [ ] This is fairly simple - should show all notes as line items in reverse chronological order
+- [ ] Should show all notes as line items in reverse chronological order
 
 - [ ] Ideally these could also be searchable and/or sortable, so it defaults to reverse chronological, but could then be sorted to show chronological if desired (this is a stretch goal...!)
 
@@ -36,7 +36,7 @@
 
 ## Add New Patient Page
 
-- [ ] Flow should walk through each of the following:
+Flow should walk through each of the following:
 
 - [ ] Name & Contact Information (title(dropdown, NULL), firstName, lastName, Health Card Number, email, phoneNumber, all address fields, Emergency contact name/number/address/relationship)
 - [ ] Demographic Information (height, weight, sex, DOB)
@@ -51,17 +51,6 @@
 
 - [ ] Upon submitting, should show View Patient Page (from above) with all details and an alert that says `New Patient, ${patient.firstName} ${patient.lastName} successfully added!`
 
-## Add New Care Provider Page
-
-- [ ] Flow should walk through each of the following:
-
-- [ ] Name & Contact Information (title(dropdown, NULL), firstName, lastName, email, phoneNumber, all address fields, Emergency contact name/number/address/relationship)
-- [ ] Specialization (NULL)
-
-- [ ] Should also assign careProviderID via auto-increment, and UUID
-
-- [ ] Upon submitting, should show View Care Provider Page (from below) with all details and an alert that says `New Care Provider, ${careProvider.firstName} ${careProvider.lastName} successfully added!`
-
 ## Search Patients Page
 
 - [ ] Should show patients based on Healthcare Card Number search as list item(s)
@@ -73,6 +62,17 @@
 - [ ] Delete button should allow you to delete, but have an "Are you sure?" message before executing the task - it should only hide from search, but maintain the record in the database
 
 - [ ] View button opens Patient Details Page (from above) for that patient in new tab/window
+
+## Add New Care Provider Page
+
+Flow should walk through each of the following:
+
+- [ ] Name & Contact Information (title(dropdown, NULL), firstName, lastName, email, phoneNumber, all address fields, Emergency contact name/number/address/relationship)
+- [ ] Specialization (NULL)
+
+- [ ] Should also assign careProviderID via auto-increment, and UUID
+
+- [ ] Upon submitting, should show View Care Provider Page (from below) with all details and an alert that says `New Care Provider, ${careProvider.firstName} ${careProvider.lastName} successfully added!`
 
 ## Search Care Providers Page
 
